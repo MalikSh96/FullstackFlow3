@@ -1,7 +1,7 @@
 const userFacade = require("./userFacade");
 var Position = require("../models/position.js");
 
-function getMyPos(username) {
+function getMyPosition(username) {
 
     let User = UserFacade.getUserByName(username);
     console.log(User[0]._id);
@@ -44,5 +44,5 @@ function findNearbyFriends(coordinates, distance) {
 
 module.exports = { 
     login:login,
-    getMyPos: getMyPos 
+    getMyPos: getMyPosition 
 }
