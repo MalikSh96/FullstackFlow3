@@ -46,10 +46,10 @@ async function createUsers(){
   var positions = await Promise.all(posPromises);
 
   var blogPromises = [
-    LocationBlogCreator("Cool Place",users[0]._id,26,148),
-    LocationBlogCreator("Another Cool Place",users[0]._id,56,56),
-    LocationBlogCreator("Yet Another Cool Place",users[0]._id,156,56),
-    LocationBlogCreator("The coolest Place",users[3]._id,156,56),
+    LocationBlogCreator("A place",users[0]._id,26,148),
+    LocationBlogCreator("B place",users[0]._id,56,56),
+    LocationBlogCreator("C place",users[0]._id,156,56),
+    LocationBlogCreator("D place",users[3]._id,156,56),
   ];
   var blogs = await Promise.all(blogPromises);
   console.log(blogs);
